@@ -1,0 +1,305 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.headers1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px ;
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 5px 2px #c2c2c2 ;
+}
+
+.headers1a1 {
+  display: flex;
+  align-items: center;
+}
+
+.headers1a1p1 {
+  width: 50px;
+  border-radius: 15px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 3px 0;
+  margin-right: 10px;
+}
+
+.headers1a1p2 {
+  color: gray;
+  font-size: 16px;
+}
+
+.headers1a2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.headers1a2 select {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.help-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.help-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.call-button {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #28a745;
+  border-radius: 20px;
+  padding-left: 10px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.phone-icon i {
+  margin-right: 8px;
+}
+
+.phone-number {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.call-link {
+  background-color: #28a745;
+  color: #fff;
+
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+ .call-link:hover{
+  background-color: #218838;
+}
+
+.headerMid{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  height: 60px;
+}
+.headerMid article img{
+  height: 40px;
+ 
+}
+.searchBar{
+  width: 400px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px 3px gainsboro;
+  padding-left: 5px;
+  overflow: hidden;
+  
+}
+.searchBar input{
+  border: none;
+  height: 100%;
+  width: 90%;
+  
+}
+.searchBar i{
+  padding-left: 0px;
+  margin-right: 20px;
+
+}
+.userOption{
+  display: flex;
+   align-items: center;
+  gap: 20px;
+}
+.userOption div a{
+  text-decoration: none;
+  color: black;
+}
+.userOption div a i{
+  height: 30px;
+  size: 30px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+.help-banner {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  align-items: center;
+  box-shadow: 0px -2px 2px 2px rgb(225, 224, 221);
+  margin-top: 30px;
+}
+
+.help-text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 80px 50px 80px ;
+   color: white;
+  background-color: rgb(149, 87, 207);
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.contact-box{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  box-shadow: 0px 0px 1px 0px rgb(103, 80, 80);
+ padding: 60px;
+ border-radius: 9px;
+
+}
+.contact-box div .nom{
+  font-size: 20px;
+  color: black;
+  align-items: center;
+  font-weight: 600;
+}
+.contact-box .btn-online-help{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+.contact-box div .timing{
+  color: rgb(131, 136, 140);
+  font-size: 20px;
+}
+.footer .footer-top{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 80px;
+
+  padding: 50px;
+}
+.footer .footer-column{
+ 
+  align-items: center;
+  font-size: 14px;
+}
+
+.footer .footer-column ul li{
+  margin: 20px 0px 20px 0px;
+  
+}
+.footer .footer-column ul li a{
+  text-decoration: none;
+  color: gray;
+}
+
+.footer .footer-column form{
+ width: 400px;
+ margin-top: 20px;
+ margin-bottom: 20px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px 3px gainsboro;
+  padding-left: 5px;
+  overflow: hidden;
+}
+
+
+.footer .footer-column form input{
+  border: none;
+  height: 100%;
+  width: 80%;
+  
+}
+.footer .footer-column form button{
+  background-color: rgb(32, 31, 31);
+  color: white;
+  padding: 4px;
+  border-radius: 20px;
+  border: none;
+}
+
+.footer .footer-column form button:hover{
+  background-color: rgb(49, 61, 189);
+ cursor: pointer;
+}
+
+
+.footer #contectInfo p{
+  color: #747574;
+  margin-top: 20px;
+}
+
+.footer #contectInfo div {
+   padding-top: 50px;
+  
+}
+.footer #contectInfo div a{
+  background-color: #111111;
+  padding: 10px;
+  color: #f8f8f8;
+  border-radius: 50%;
+}
+.footer #contectInfo div .facebook:hover{
+  background-color: rgb(81, 110, 216);
+  transition: all 0.4s;
+}
+.footer #contectInfo div .twitter:hover{
+  background-color: rgb(81, 214, 216);
+  transition: all 0.4s;
+}
+.footer #contectInfo div .insta:hover{
+ 
+  background-color: rgb(214, 81, 216);
+  transition: all 0.4s;
+}
+
+.footer .footer-end{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.footer .footer-end i{
+  font-size: 40px;
+  margin-right: 20px;
+  
+}
+.footer .footer-end i:hover{
+ color: #333;
+  
+}
+

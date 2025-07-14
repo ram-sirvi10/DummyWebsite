@@ -1,0 +1,94 @@
+.forms{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+ 
+}
+
+.login-form , .register-form{
+  background: #fff;
+  padding: 80px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+ form input[type="text"],
+     input[type="email"],
+  input[type="password"]{
+      width: 80%;
+    height: 20px;
+    padding: 10px 80px 10px 20px;
+     box-shadow: 0px 0px 0px 0.09px rgb(152, 152, 152);
+     border-radius: 20px;
+     border: none;
+}
+
+.forms form label {
+  display: block;
+  margin: 10px 0 5px 0px;
+  font-weight: 500;
+}
+
+.forms form label span{
+  color: red;
+}
+
+.forms .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px;
+}
+
+.forms .options .forgot {
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 20px;
+  color: #111;
+}
+
+.forms .btn {
+  width: 100%;
+  padding: 10px;
+  background: #1d1d1d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+.info-text {
+  font-size: 14px;
+  margin: 10px 0 20px;
+  color: #555;
+}
+
+.account-mid {
+    margin-top: 50px;
+    text-align: center;
+}
+.account-mid .title{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.account-mid .account-mid-d1 a{
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 20px;
+    color: rgb(53, 95, 231);
+}
+.account-mid .account-mid-d1 span{
+    color: rgb(122, 121, 121);
+    margin-left: 10px;
+}
