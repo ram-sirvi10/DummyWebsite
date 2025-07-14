@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Acount</title>
+    <title>Home</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -11,8 +11,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./cssFiles/myaccount.css" />
     <link rel="stylesheet" href="./cssFiles/headerAndFooter.css" />
+    <link rel="stylesheet" href="./cssFiles/viewCart.css" />
   </head>
   <body>
     <section class="header">
@@ -45,8 +45,8 @@
       </section>
       <section class="headerMid">
         <article>
-          <a href="./index.html"
-            ><img
+          <a href="./index.html">
+            <img
               src="https://www.portotheme.com/wordpress/porto/shop50/wp-content/uploads/sites/233/2024/07/shop50-logo.png"
               alt=""
           /></a>
@@ -73,7 +73,7 @@
             </a>
           </div>
           <div>
-            <a href="./viewCart.html" class="myAccount"
+            <a href="#" class="myAccount"
               ><i class="fa-solid fa-bag-shopping" style="width: 30px"></i>
             </a>
           </div>
@@ -90,52 +90,140 @@
         <a href="#">More</a>
       </section>
     </section>
-    <hr style="margin-top: 20px" />
-    <section class="account-mid">
-      <div class="account-mid-d1">
-        <a href="./index.html">HOME</a>&nbsp; &gt; &nbsp;
-        <span>MY ACCOUNT</span>
-      </div>
-      <h1 class="title">My account</h1>
+    <!-- Header end  -->
+
+    <section class="directroy-nav">
+      <a href="#" class="shopping-cart">Shopping Cart </a>><a
+        href="#"
+        class="checkout"
+        >Checkout </a
+      >><span class="order-complete">Order Complete </span>
     </section>
 
-    <section class="forms">
-      <article class="login-form">
-        <h2>Login</h2>
-        <form>
-          <label for="user">Username or email address <span>*</span></label>
-          <input type="text" id="user" required />
-
-          <label for="password">Password <span>*</span></label>
-
-          <input type="password" id="password" required />
-
-          <div class="options">
-            <label><input type="checkbox" /> Remember me</label>
-            <a href="#" class="forgot">Forgot Password?</a>
-          </div>
-
-          <button type="submit" class="btn">LOGIN</button>
-        </form>
+    <section class="products-summary">
+      <article>
+        <table  class="products-table">
+          <thead>
+            <tr>
+              <th>PRODUCT</th>
+              <th>PRICE</th>
+              <th>QUANTITY</th>
+              <th>SUBTOTAL</th>
+            </tr>
+          </thead>
+          <tr>
+            <td class="product-img">
+              <div
+                ><a href="./productDetails.html"><img src="https://www.portotheme.com/wordpress/porto/shop50/wp-content/uploads/sites/233/2024/07/shop50-product-4-2-300x300.jpg" alt="" /></a
+              ></div>
+              <div class="product-info"
+                ><a href="./productDetails.htmlS" >Apple iPhone 13 Pro Leather Case - Black </a
+              ></div>
+            </td>
+            <td>$15.00</td>
+            <td>
+              <div>
+                <span><button>-</button></span>
+                <span>1</span>
+                <span><button>+</button></span>
+            </div>
+            </td>
+            <td>$15.00</td>
+          </tr>
+           <tr>
+            <td class="product-img">
+              <div  
+                ><a href="#"><img src="https://www.portotheme.com/wordpress/porto/shop50/wp-content/uploads/sites/233/2024/07/shop50-product-9-1-300x300.jpg" alt="" /></a
+              ></div>
+              <div
+                ><a href="#">Lenovo Tab M10 HD 2nd Gen Folio Case w/ Protective Screen Film </a
+              ></div>
+            </td>
+            <td>$15.00</td>
+            <td>
+              <div>
+                <span><button>-</button></span>
+                <span>1</span>
+                <span><button>+</button></span>
+            </div>
+            </td>
+            <td>$15.00</td>
+          </tr>
+           <tr>
+            <td>
+              <div  class="product-img"
+                ><a href="#"><img src="https://www.portotheme.com/wordpress/porto/shop50/wp-content/uploads/sites/233/2024/07/shop50-product-10-1-300x300.jpg" alt="" /></a
+              ></div>
+              <div
+                ><a href="#">15W Power Adapter</a
+              ></div>
+            </td>
+            <td>$15.00</td>
+            <td>
+              <div>
+                <span><button>-</button></span>
+                <span>1</span>
+                <span><button>+</button></span>
+            </div>
+            </td>
+            <td>$15.00</td>
+          </tr>
+           <tr>
+            <td>
+              <div class="product-img"
+                ><a href="#"><img src="https://www.portotheme.com/wordpress/porto/shop50/wp-content/uploads/sites/233/2024/07/shop50-product-11-1-300x300.jpg" alt="" /></a
+              ></div>
+              <div
+                ><a href="#">Galaxy S24 Ultra S Pen</a
+              ></div>
+            </td>
+            <td>$15.00</td>
+            <td>
+              <div>
+                <span><button>-</button></span>
+                <span>1</span>
+                <span><button>+</button></span>
+            </div>
+            </td>
+            <td>$15.00</td>
+          </tr>
+        </table>
       </article>
-
-      <article class="register-form">
-        <h2>Register</h2>
-        <form>
-          <label for="username">Username <span>*</span></label>
-          <input type="text" id="username" required />
-
-          <label for="email">Email address <span>*</span></label>
-          <input type="email" id="email" required />
-
-          <p class="info-text">
-            A link to set a new password will be sent to your email address.
-          </p>
-          <button type="submit" class="btn">REGISTER</button>
+      <article class="cart-chackout-info">
+        <h2>CART TOTALS</h2>
+        <article>
+          <p>Subtotal</p>
+          <p>$135.00</p>
+        </article>
+        <p>Shipping</p>
+        <p>Flat rate</p>
+        <p>Shipping to <b>NY.</b></p>
+        <form action="">
+          <select name="" id="">
+            <option value="">India</option>
+            <option value="">UK</option>
+            <option value="">USA</option>
+            <option value="">Australia</option>
+          </select>
+          <select name="" id="">
+            <option value="">Indore</option>
+            <option value="">Ujjain</option>
+            <option value="">Ratlam</option>
+            <option value="">Dewas</option>
+          </select>
+          <input type="text" name="" id="" placeholder="Town / City" />
+          <input type="text" name="" id="" placeholder="Post code / ZIP" />
+          <h2>UPDATE TOTALS</h2>
+          <article>
+            <p>Total</p>
+            <p>$135.00</p>
+          </article>
+          <button>PROCEED TO CHECKOUT ➜</button>
         </form>
       </article>
     </section>
 
+    <!-- Support Banner -->
     <section class="help-banner">
       <div class="help-text">
         <i class="fas fa-question-circle"></i>
