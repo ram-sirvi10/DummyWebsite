@@ -1,0 +1,23 @@
+.directroy-nav{
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 20px;
+    font-weight: 750;
+    color: gray;
+}
+.directroy-nav a,.directroy-nav span{
+    text-decoration: none;
+    margin: 0px 20px;
+}
+.directroy-nav .arrow{
+    color: black;
+}
+.directroy-nav .checkout{
+    color: rgb(34, 65, 175);
+}
+.directroy-nav .shopping-cart{
+    color: rgb(0, 0, 0);
+}
+.directroy-nav .shopping-cart:hover{
+   color: rgb(34, 65, 175);
+}
