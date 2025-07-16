@@ -1,0 +1,167 @@
+
+.hero {
+  height: 100vh;
+  background-color: whitesmoke;
+  margin-left: 50px;
+  margin-right: 80px;
+  display: flex;
+  padding-left: 70px;
+  padding-top: 20px;
+  overflow: hidden;
+  background: #fafafa;
+background: linear-gradient(135deg, rgba(250, 250, 250, 1) 68%, rgba(132, 66, 245, 0.74) 100%, rgba(239, 56, 245, 1) 97%);
+}
+
+
+.hero article .heroimg img{
+  width: 370px;
+  align-items: center;
+  position: relative;
+  top: 100px;
+}
+
+.hero article .herotext {
+  margin-left: 100px;
+  font-size: 60px;
+  padding-top: 100px;
+  font-weight: 800;
+}
+
+.hero article .heroa2d2text {
+  font-size: 20px;
+  padding-left: 98px;
+  padding-top: 20px;
+}
+
+.hero article .heroa2d3button {
+  padding: 30px;
+  padding-left: 98px;
+}
+
+.hero article .heroa2d3button button {
+  border-radius: 30px;
+  height: 50px;
+  width: 160px;
+  font-size: 23px;
+  background-color: rgba(16, 16, 212, 0.875);
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+/* ========================hero section end========== */
+.genaralinfo {
+  background-color: whitesmoke;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 70px;
+  align-items: center;
+}
+
+.genaralinfo article {
+  display: flex;
+  font-size: 25px;
+  justify-content: space-between;
+
+}
+
+/* ===============================================genralinfo end================== */
+
+.popular {
+  margin-top: 40px;
+  justify-content: space-evenly;
+  margin-left: 50px;
+}
+
+.popular .populartext {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.popular .popularitem {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.popular article .popularitemtext h2 {
+  margin-left: 79px;
+}
+
+.popular article .popularitemtext pre {
+  margin-left: 70px;
+  font-size: 15px;
+
+}
+
+/*  ===============cases end========= */
+
+.hurry {
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 800;
+   margin-left: 50px;
+}
+
+/*  ==============hurry up deal end */
+
+.mainitem {
+  margin-top: 40px;
+  margin-left: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  cursor: pointer;
+}
+
+.mainitem .mainitema1 {
+  background-color: whitesmoke;
+  width: 300px;
+  border-radius: 15px;
+}
+
+
+.mainitem .circleitem {
+  display: flex;
+  justify-content: center;
+
+}
+
+.mainitem .circleitem div {
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+}
+
+.mainitem article .cables {
+  color: rgb(174, 160, 160);
+  display: flex;
+  justify-content: center;
+}
+
+.mainitem .mainitema1 .iteminfo {
+  display: flex;
+  justify-content: center;
+  color: rgb(51, 48, 48);
+}
+
+.mainitem .mainitema1 .star {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.mainitem .mainitema1 .star i {
+  color: rgb(49, 47, 47);
+  font-size: 12px;
+}
+
+.mainitem .mainitema1 .price {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 4px;
+}
