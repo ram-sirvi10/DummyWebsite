@@ -92,3 +92,70 @@
     color: rgb(122, 121, 121);
     margin-left: 10px;
 }
+
+@media (max-width: 1024px) {
+  .forms {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .login-form,
+  .register-form {
+    width: 80%;
+    padding: 60px;
+  }
+
+  .account-mid .title {
+    font-size: 26px;
+  }
+
+  .account-mid .account-mid-d1 a,
+  .account-mid .account-mid-d1 span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .forms {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .login-form,
+  .register-form {
+    width: 100%;
+    padding: 40px 20px;
+    font-size: 11px;
+  }
+
+  form input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .forms .options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .forms .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .account-mid .title {
+    font-size: 22px;
+  }
+
+  .info-text {
+    font-size: 12px;
+    text-align: center;
+  }
+}

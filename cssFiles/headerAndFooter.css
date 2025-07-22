@@ -308,3 +308,156 @@
   scale: 1.2;
   transition: all .5s;
 }
+
+@media (max-width: 1024px) {
+  .headers1,
+  .headerMid,
+  .navbar,
+  .help-banner,
+  .contact-box,
+  .footer .footer-top,
+  .footer .footer-end {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .searchBar {
+    width: 90%;
+  }
+
+  .footer .footer-column form {
+    width: 90%;
+  }
+
+  .footer .footer-top {
+    gap: 40px;
+  }
+
+  .userOption {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .headerMid article img {
+    margin-bottom: 10px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .headers1,
+  .headerMid,
+  .navbar,
+  .help-banner,
+  .contact-box,
+  .footer .footer-top,
+  .footer .footer-end {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .headers1a2 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .searchBar {
+    width: 100%;
+  }
+
+  .footer .footer-column form {
+    width: 100%;
+  }
+
+  .help-text {
+    padding: 30px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .contact-box {
+    padding: 30px;
+    flex-direction: column;
+  }
+
+  .footer .footer-end {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer .footer-end i {
+    font-size: 30px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .footer .footer-column ul li {
+    margin: 10px 0;
+  }
+
+  .footer #contectInfo div {
+    padding-top: 20px;
+  }
+}
+
+
+.mininav div label i{
+  font-size: 20px;
+  border: 2px solid black;
+  padding: 5px 10px;
+}
+.mininav img{
+  width: 150px;
+  height: 50px;
+
+}
+.mininav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  padding: 10px;
+}
+.shownav{
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: rgb(224, 225, 227);
+  height: max-content;
+  box-shadow: 0px 0px 2px 2px rgb(140, 137, 130);
+  border-radius: 20px;
+  z-index: 2;
+}
+.shownav div{
+  padding: 20px;
+}
+.shownav a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+
+}
+@media(max-width:1024px){
+  .navbar{
+    display: none;
+  }
+  .mininav{
+    display: flex;
+  }
+  #check1:checked~ .shownav{
+    display: block;
+
+  }
+  .header{
+    display: none;
+  }
+}

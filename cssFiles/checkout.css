@@ -148,3 +148,74 @@ textarea {
 .place-order-btn:hover {
   background-color: #333;
 }
+
+
+@media (max-width: 1024px) {
+  .checkout-container {
+    gap: 20px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkout-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 15px;
+  }
+
+  .billing-form,
+  .order-summary {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .directroy-nav {
+    font-size: 18px;
+    padding: 40px 0px;
+  }
+
+  .directroy-nav a, .directroy-nav span {
+    display: inline-block;
+    margin: 0px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkout-container {
+    padding: 0 10px;
+  }
+
+  .place-order-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .note {
+    font-size: 0.85em;
+  }
+
+  .directroy-nav {
+    font-size: 16px;
+    padding: 30px 0px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 14px;
+  }
+}
