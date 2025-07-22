@@ -12,8 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./cssFiles/headerAndFooter.css" />
-    <link rel="stylesheet" href="./cssFiles/checkout.css">
-   
+    <link rel="stylesheet" href="./cssFiles/checkout.css" />
   </head>
   <body>
     <section class="header">
@@ -46,11 +45,11 @@
       </section>
       <section class="headerMid">
         <article>
-          <a href="./index.html"> <img
-            src="https://www.portotheme.com/wordpress/porto/shop50/wp-content/uploads/sites/233/2024/07/shop50-logo.png"
-            alt=""
+          <a href="./index.html">
+            <img
+              src="https://www.portotheme.com/wordpress/porto/shop50/wp-content/uploads/sites/233/2024/07/shop50-logo.png"
+              alt=""
           /></a>
-         
         </article>
         <article class="searchBar">
           <input type="text" placeholder="Search for products" /><i
@@ -59,16 +58,24 @@
         </article>
         <article class="userOption">
           <div>
-            <a href="#" class="wishlist"><i class="fa-regular fa-heart" style="width: 30px;"></i> Wishlist </a>
+            <a href="#" class="wishlist"
+              ><i class="fa-regular fa-heart" style="width: 30px"></i> Wishlist
+            </a>
           </div>
           <div>
-            <a href="#" class="trackOrder"><i class="fa-solid fa-box" style="width: 30px;"></i>Track Order </a>
+            <a href="#" class="trackOrder"
+              ><i class="fa-solid fa-box" style="width: 30px"></i>Track Order
+            </a>
           </div>
           <div>
-            <a href="./myAccount.html" class="myAccount"><i class="fa-regular fa-user" style="width: 30px;"></i>My Account </a>
+            <a href="./myAccount.html" class="myAccount"
+              ><i class="fa-regular fa-user" style="width: 30px"></i>My Account
+            </a>
           </div>
           <div>
-             <a href="./viewCart.html" class="myAccount"><i class="fa-solid fa-bag-shopping" style="width: 30px;"></i> </a>
+            <a href="./viewCart.html" class="myAccount"
+              ><i class="fa-solid fa-bag-shopping" style="width: 30px"></i>
+            </a>
           </div>
         </article>
       </section>
@@ -84,93 +91,255 @@
       </section>
     </section>
 
-
-
     <section class="directroy-nav">
       <a href="./viewCart.html" class="shopping-cart">Shopping Cart </a>
       <span class="arrow">></span>
-      <a href="./checkout.html"  class="checkout"
-        >Checkout </a
-      >><span class="order-complete">Order Complete </span>
+      <a href="./checkout.html" class="checkout">Checkout </a>><span
+        class="order-complete"
+        >Order Complete
+      </span>
     </section>
 
-    
-    <!-- Support Banner -->
-  <section class="help-banner">
-    <div class="help-text">
-      <i class="fas fa-question-circle "></i>
-      <div>
-        <h2>Need Any Help?</h2>
-        <p>We are here to help you with any question.</p>
-      </div>
-    </div>
-    <div class="contact-box">
-      <div>
-        <p class="nom"><i class="fas fa-phone-alt"></i> 123 456 7890</p>
-         <a href="#" class="btn-online-help">Online Help <i class="fas fa-external-link-alt"></i></a> 
-      </div>
-     <div>
-      <p class="timing">Monday to Saturday - 8am - 6pm</p>
-      <a href="#" class="faq-link">Frequently Asked Questions</a>
-     </div>
-     
-   
-    </div>
-  </section>
+    <div class="checkout-container">
+      <!-- Billing Details Section -->
+      <section class="billing-form">
+        <h2>Billing details</h2>
 
-  <footer class="footer">
-    <section class="footer-top">
-      <div class="footer-column " id="contectInfo">
-        <img src="https://www.portotheme.com/wordpress/porto/shop50/wp-content/uploads/sites/233/2024/07/shop50-logo-footer-101x26.png" alt="">
-        <p>Address: 1234 Street, Suite 500, New York, NY</p>
-        <a href="#">Get Directions</a>
-        <p>Email: <a href="mailto:you@portotheme.com">you@portotheme.com</a></p>
-        <p>Phone: <a href="tel:1234567890">123 456 7890</a></p>
-        <div class="social-icons">
-          <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="twitter"><i class="fab fa-x-twitter"></i></a>
-          <a href="#" class="insta"> <i class="fab fa-instagram"></i></a>
+        <article class="form-row">
+          <div class="form-group">
+            <label>First name *</label>
+            <input type="text" required />
+          </div>
+          <div class="form-group">
+            <label>Last name *</label>
+            <input type="text" required />
+          </div>
+        </article>
+
+        <article class="form-group">
+          <label>Company name (optional)</label>
+          <input type="text" />
+        </article>
+
+        <article class="form-group">
+          <label>Country / Region *</label>
+          <select required>
+            <option selected>United States (US)</option>
+            <option>India</option>
+            <option>UK</option>
+          </select>
+        </article>
+
+        <article class="form-group">
+          <label>Street address *</label>
+          <input
+            type="text"
+            placeholder="House number and street name"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Apartment, suite, unit, etc. (optional)"
+          />
+        </article>
+
+        <article class="form-row">
+          <div class="form-group">
+            <label>Town / City *</label>
+            <input type="text" required />
+          </div>
+          <div class="form-group">
+            <label>State *</label>
+            <select required>
+              <option>New York</option>
+              <option>California</option>
+              <option>Texas</option>
+            </select>
+          </div>
+        </article>
+
+        <article class="form-row">
+          <div class="form-group">
+            <label>ZIP Code *</label>
+            <input type="text" required />
+          </div>
+          <div class="form-group">
+            <label>Phone *</label>
+            <input type="text" required />
+          </div>
+        </article>
+
+        <article class="form-group">
+          <label>Email address *</label>
+          <input type="email" required />
+        </article>
+
+        <article class="form-group checkbox">
+          <input type="checkbox" id="ship-different" />
+          <label for="ship-different">Ship to a different address?</label>
+        </article>
+
+        <article class="form-group">
+          <label>Order notes (optional)</label>
+          <textarea
+            rows="3"
+            placeholder="Notes about your order, e.g. special notes for delivery."
+          ></textarea>
+        </article>
+      </section>
+
+      <!-- Order Summary Section -->
+      <section class="order-summary">
+        <h2>Your Order</h2>
+
+        <article class="order-items">
+          <div class="item">
+            <span>Lenovo Tab M10 HD 2nd Gen Folio Case</span>
+            <span>$112.00</span>
+          </div>
+          <div class="item">
+            <span>15W Power Adapter - Black</span>
+            <span>$5.00</span>
+          </div>
+          <div class="item">
+            <span>Galaxy S24 Ultra S Pen - Black</span>
+            <span>$3.00</span>
+          </div>
+          <div class="item">
+            <span>Apple iPhone 13 Pro Leather Case - Blue</span>
+            <span>$17.00</span>
+          </div>
+          <div class="subtotal item">
+            <strong>Subtotal</strong>
+            <span>$137.00</span>
+          </div>
+          <div class="item">
+            <span>Shipping</span>
+            <span>Flat Rate</span>
+          </div>
+          <div class="total item">
+            <strong>Total</strong>
+            <strong>$137.00</strong>
+          </div>
+          <div class="free-shipping-offer">
+            <p>Add <strong>$151.00</strong> to cart and get free shipping!</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 45%"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="payment-methods">
+          <h3>Payment methods</h3>
+          <label
+            ><input type="radio" name="payment" checked /> Direct bank
+            transfer</label
+          >
+          <p class="note">
+            Make your payment directly into our bank account. Please use your
+            Order ID as the payment reference. Your order will not be shipped
+            until the funds have cleared in our account.
+          </p>
+
+          <label><input type="radio" name="payment" /> Check payments</label>
+          <label><input type="radio" name="payment" /> Cash on delivery</label>
+        </article>
+
+        <article class="review-optin">
+          <input type="checkbox" id="review-optin" />
+          <label for="review-optin"
+            >Would you like to be invited to review your order?</label
+          >
+        </article>
+
+        <button class="place-order-btn">PLACE ORDER</button>
+      </section>
+    </div>
+
+    <!-- Support Banner -->
+    <section class="help-banner">
+      <div class="help-text">
+        <i class="fas fa-question-circle"></i>
+        <div>
+          <h2>Need Any Help?</h2>
+          <p>We are here to help you with any question.</p>
         </div>
       </div>
-
-      <div class="footer-column">
-        <h3>Company</h3>
-        <ul type="none">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h3>Support</h3>
-        <ul type="none">
-          <li><a href="#">Help & FAQs</a></li>
-          <li><a href="#">Login / Register</a></li>
-          <li><a href="#">Track Your Order</a></li>
-          <li><a href="#">Shipping & Returns</a></li>
-          <li><a href="#">Accessibility</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h3>Subscribe to Our Newsletter</h3>
-        <form>
-          <input type="email" placeholder="Email Address..." required>
-          <button type="submit">Subscribe</button>
-        </form>
-        <p>By subscribing, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+      <div class="contact-box">
+        <div>
+          <p class="nom"><i class="fas fa-phone-alt"></i> 123 456 7890</p>
+          <a href="#" class="btn-online-help"
+            >Online Help <i class="fas fa-external-link-alt"></i
+          ></a>
+        </div>
+        <div>
+          <p class="timing">Monday to Saturday - 8am - 6pm</p>
+          <a href="#" class="faq-link">Frequently Asked Questions</a>
+        </div>
       </div>
     </section>
-    <section class="footer-end">
-      <article>© Porto eCommerce. 2025 - All Rights Reserved</article>
-      <article>
-        <i class="fa-brands fa-cc-visa"></i>
-        <i class="fa-brands fa-cc-paypal"></i>
-        <i class="fa-brands fa-stripe"></i> 
-      </article>
-    </section>
-  </footer>
+
+    <footer class="footer">
+      <section class="footer-top">
+        <div class="footer-column" id="contectInfo">
+          <img
+            src="https://www.portotheme.com/wordpress/porto/shop50/wp-content/uploads/sites/233/2024/07/shop50-logo-footer-101x26.png"
+            alt=""
+          />
+          <p>Address: 1234 Street, Suite 500, New York, NY</p>
+          <a href="#">Get Directions</a>
+          <p>
+            Email: <a href="mailto:you@portotheme.com">you@portotheme.com</a>
+          </p>
+          <p>Phone: <a href="tel:1234567890">123 456 7890</a></p>
+          <div class="social-icons">
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="insta"> <i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul type="none">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Support</h3>
+          <ul type="none">
+            <li><a href="#">Help & FAQs</a></li>
+            <li><a href="#">Login / Register</a></li>
+            <li><a href="#">Track Your Order</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Subscribe to Our Newsletter</h3>
+          <form>
+            <input type="email" placeholder="Email Address..." required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <p>
+            By subscribing, you agree to our <a href="#">Terms of Use</a> and
+            <a href="#">Privacy Policy</a>.
+          </p>
+        </div>
+      </section>
+      <section class="footer-end">
+        <article>© Porto eCommerce. 2025 - All Rights Reserved</article>
+        <article>
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-stripe"></i>
+        </article>
+      </section>
+    </footer>
   </body>
 </html>

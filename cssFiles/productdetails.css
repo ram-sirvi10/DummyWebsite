@@ -452,3 +452,186 @@ body {
 .required {
   color: red;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////////// */
+
+/* General Info */
+@media   (max-width: 1024px) {
+  .genaralinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 170px;
+  }
+
+  .genaralinfo article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Popular Categories */
+@media   (max-width: 1024px) {
+  .popular .popularitem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+
+  .popular article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Hurry Up Deals */
+@media   (max-width: 768px) {
+  .hurry {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Main Items Grid */
+@media   (max-width: 1200px) {
+  .mainitem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media   (max-width: 992px) {
+  .mainitem {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media   (max-width: 600px) {
+  .mainitem {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .mainitem .mainitema1 {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Help Banner */
+@media   (max-width: 768px) {
+  .help-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .help-text,
+  .contact-box {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Footer */
+@media   (max-width: 992px) {
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.mininav div label i{
+  font-size: 20px;
+  border: 2px solid black;
+  padding: 5px 10px;
+}
+.mininav img{
+  width: 150px;
+  height: 50px;
+
+}
+.mininav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  padding: 10px;
+}
+.shownav{
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: -90px;
+  background-color: rgb(224, 225, 227);
+  height: max-content;
+  box-shadow: 0px 0px 2px 2px rgb(140, 137, 130);
+  border-radius: 20px;
+  z-index: 2;
+}
+.shownav div{
+  padding: 20px;
+}
+.shownav a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+
+}
+@media(max-width:1024px){
+  .navbar{
+    display: none;
+  }
+  .mininav{
+    display: flex;
+  }
+  #check1:checked~ .shownav{
+    display: block;
+
+  }
+  .header{
+    display: none;
+  }
+}
